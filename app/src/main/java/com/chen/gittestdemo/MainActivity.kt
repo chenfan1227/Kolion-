@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initView()
     }
+
     //list本地加载数组数据
     fun initView() {
         val items = listOf(
@@ -94,7 +95,8 @@ class MainActivity : AppCompatActivity() {
 //            val intent = Intent()
 //            intent.setClass(this, WebViewActivityDm::class.java)
 //            startActivity(intent)
-//        }
+
+        //文字编辑跟文字大小等具体操作
         recycle.adapter = MainAdapter(items)
         text.text = ("测试用语")
         text.textSize = 20f
@@ -130,6 +132,9 @@ class MainActivity : AppCompatActivity() {
 
         class ViewHolder(val textView: TextView) : RecyclerView.ViewHolder(textView)
     }
+    /**
+     * 通过加载item方式增加list的数据
+     * */
 //    class GankNewsAdapter(val datas: List<TextModel>, val itemClickListener: (TextModel) -> Unit) : RecyclerView.Adapter<GankNewsAdapter.ViewHolder>() {
 //
 //        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

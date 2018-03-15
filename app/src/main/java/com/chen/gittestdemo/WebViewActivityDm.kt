@@ -1,10 +1,12 @@
 package com.test.myapplication
 
+import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebView
 import com.chen.gittestdemo.R
 
+@SuppressLint("Registered")
 /**
  * web界面
 * */
