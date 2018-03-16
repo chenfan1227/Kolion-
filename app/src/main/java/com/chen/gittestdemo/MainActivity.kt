@@ -1,5 +1,6 @@
 package com.chen.gittestdemo
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -13,10 +14,11 @@ import com.test.myapplication.bean.TextModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    lateinit var context: Context
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        context = this
         initView()
     }
 
@@ -88,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
         )
         text.visibility = View.GONE
-        recycle.layoutManager = LinearLayoutManager(this)
+        recycle.layoutManager = LinearLayoutManager(context)
 //        传统bean方式加载数据
         val datas = mutableListOf<TextModel>()
 //        recycle.adapter = GankNewsAdapter(datas) {
@@ -109,10 +111,10 @@ class MainActivity : AppCompatActivity() {
 
         }
         go_to_web.setOnClickListener {
-            val intent = Intent()
-            intent.setClass(this, WebViewActivityDm::class.java)
-            intent.putExtra("pwd", text.text.toString())
-            startActivity(intent)
+
+            val ex = ExitDialog(context, R.style.MyDialog)
+            ex.show()
+
         }
 
     }
