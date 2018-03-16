@@ -30,7 +30,7 @@ public class ExitDialog extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exit);
 
-        TextView cancle = (TextView) findViewById(R.id.btn_myinfo_cancel);
+        TextView cancle = findViewById(R.id.btn_myinfo_cancel);
         cancle.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -39,7 +39,7 @@ public class ExitDialog extends Dialog {
 
             }
         });
-        TextView exit = (TextView) findViewById(R.id.btn_myinfo_sure);
+        TextView exit = findViewById(R.id.btn_myinfo_sure);
         exit.setOnClickListener(new View.OnClickListener() {
 
             @Override
