@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GitTestDemo.iml" filepath="$PROJECT_DIR$/GitTestDemo.iml" />
-      <module fileurl="file://D:\demo\Kolion\GitTestDemo.iml" filepath="D:\demo\Kolion\GitTestDemo.iml" />
-      <module fileurl="file://E:\GitTestDemo\Kolion.iml" filepath="E:\GitTestDemo\Kolion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kolion.iml" filepath="$PROJECT_DIR$/Kolion.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
